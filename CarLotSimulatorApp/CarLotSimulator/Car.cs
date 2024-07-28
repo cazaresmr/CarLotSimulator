@@ -1,4 +1,3 @@
-// Car.cs
 using System;
 
 namespace CarLotSimulator
@@ -11,6 +10,11 @@ namespace CarLotSimulator
         public string EngineNoise { get; set; }
         public string HonkNoise { get; set; }
         public bool IsDriveable { get; set; }
+
+        public Car()
+        {
+            CarLot.numberOfCars++;
+        }
 
         public void MakeEngineNoise(string noise)
         {

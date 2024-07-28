@@ -1,5 +1,4 @@
-﻿// Program.cs
-using System;
+﻿using System;
 
 namespace CarLotSimulator
 {
@@ -19,6 +18,7 @@ namespace CarLotSimulator
                 IsDriveable = true
             };
             carLot.Cars.Add(car1);
+            Console.WriteLine($"Number of cars: {CarLot.numberOfCars}");
 
             Car car2 = new Car();
             car2.Year = 2018;
@@ -28,6 +28,7 @@ namespace CarLotSimulator
             car2.HonkNoise = "Honk";
             car2.IsDriveable = true;
             carLot.Cars.Add(car2);
+            Console.WriteLine($"Number of cars: {CarLot.numberOfCars}");
 
             Car car3 = new Car();
             car3.Year = 2015;
@@ -37,6 +38,7 @@ namespace CarLotSimulator
             car3.HonkNoise = "Toot";
             car3.IsDriveable = false;
             carLot.Cars.Add(car3);
+            Console.WriteLine($"Number of cars: {CarLot.numberOfCars}");
 
             car1.MakeEngineNoise(car1.EngineNoise);
             car1.MakeHonkNoise(car1.HonkNoise);
